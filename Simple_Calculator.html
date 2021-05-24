@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      border: 2px solid black;
+      width: 50%;
+    }
+
+    .item {
+      display: block;
+      border: 1px solid black;
+      flex: 20%;
+      text-align: center;
+    }
+    button {
+      width: 100%;
+    }
+    .screen {
+      display: block;
+      border: 1px solid #ffffff;
+      flex: 20%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="row">
+    <div class="screen"><p id="in1">num1</p></div>
+    <div class="screen"><p id="in2">OPERATOR</p></div>
+    <div class="screen"><p id="in3">num2</p></div>
+    <div class="screen"><p id="in4">=</p></div>
+    <div class="screen"><p id="in5">result</p></div>
+</div>
+<div class="row">
+  <div class="item">
+    <button id = "b00" type="button" onclick="show(1)">1</button>
+  </div>
+  <div class="item">
+    <button id = "b01">2</button>
+  </div>
+  <div class="item">
+    <button id = "b02">3</button>
+  </div>
+  <div class="item">
+    <button id="b03" onclick=show("+")>+</button>
+  </div>
+  <div class="item">
+    <button id="b04">/</button>
+  </div>
+</div>
+<div class="row">
+  <div class="item">
+    <button>4</button>
+  </div>
+  <div class="item">
+    <button>5</button>
+  </div>
+  <div class="item">
+    <button>6</button>
+  </div>
+  <div class="item">
+    <button>-</button>
+  </div>
+  <div class="item">
+    <button>*</button>
+  </div>
+</div>
+<div class="row">
+  <div class="item"><button>7</button></div>
+  <div class="item"><button>8</button></div>
+  <div class="item"><button>9</button></div>
+  <div class="item"><button>0</button></div>
+  <div class="item"><button>=</button></div>
+</div>
+<script>
+</script>
+</body>
+</html>
